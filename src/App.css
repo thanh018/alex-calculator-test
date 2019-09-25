@@ -1,22 +1,58 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #293944;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #09d3ac;
+.calculator-body {
+  width: 80%;
+  max-width: 300px;
+  box-shadow: rgba(0,0,0,.2) 0px 0px 10px 5px;
+}
+
+.button-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.button-wrapper button {
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  background-color: #FFF;
+  color: #293944;
+  flex: 1 1;
+  outline: 1px solid #293944;
+  border: none;
+}
+
+.result {
+  height: 3em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4em;
+  background-color: #3F5666;
+  color: #FFF;
+  padding: 10px;
+}
+
+
+.button-wrapper button.operator {
+  background-color: #EC9770;
+  color: #293944;
+}
+
+.button-wrapper button:hover,
+.button-wrapper button:focus {
+  background: #007eff94;
+  color: #fff;
 }
